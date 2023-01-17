@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { modalSlice } from './Services/modalReducer.js';
 import { configureStore, combineReducers } from "@reduxjs/toolkit"
 import { Provider } from 'react-redux';
+import modalSlice from './services/modalReducer.js';
 import App from './App.jsx';
 
 const rootReducer = combineReducers({
-    modalSlice: modalSlice.reducer
+    modalSlice: modalSlice
 })
 const store = configureStore({
   reducer: rootReducer

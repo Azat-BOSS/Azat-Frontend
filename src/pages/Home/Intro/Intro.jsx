@@ -2,7 +2,7 @@ import React from "react";
 import introStyle from "./intro.module.css"
 import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
-import { changeModalState } from "../../../Services/modalReducer";
+import { changeModalState } from "../../../services/modalReducer.js";
 import { useDispatch } from "react-redux";
 
 const Intro = () => {

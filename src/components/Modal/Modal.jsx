@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import modalStyle from "./modal.module.css"
 import ReactDOM from "react-dom";
-import { changeModalState } from "../../Services/modalReducer";
+import { changeModalState } from "../../services/modalReducer.js";
 import { useDispatch, useSelector } from "react-redux";
 
 const Modal = ({children}) => {
