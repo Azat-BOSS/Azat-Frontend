@@ -13,13 +13,15 @@ const Footer = () => {
         </ul>
         <ul className={footerStyle.footer__info}>
           <h4 className={footerStyle.footer__title}>Social Media</h4>
-          <a href="/#" className={footerStyle.footer__text}>Instagram</a>
-          <a href="/#" className={footerStyle.footer__text}>GitHub</a>
+          <a href="https://github.com/Azat-BOSS" rel="noopener noreferrer" className={footerStyle.footer__text}>GitHub</a>
         </ul>
         <ul className={footerStyle.footer__info}>
           <h4 className={footerStyle.footer__title}>Messengers</h4>
-          <a href="/#" className={footerStyle.footer__text}>Telegram</a>
-          <a href="/#" className={footerStyle.footer__text}>WhatsApp</a>
+          <a href="https://telegram.me/AzatFrontend" rel="noopener noreferrer" className={footerStyle.footer__text}>Telegram</a>
+        </ul>
+        <ul className={footerStyle.footer__info}>
+          <h4 className={footerStyle.footer__title}>Email</h4>
+          <a href="mailto:azatgainutdinov15@gmail.com" rel="noopener noreferrer" className={footerStyle.footer__text}>email</a>
         </ul>
       </div>
       <p className={footerStyle.footer__author}>© 2022, Azat Gaynutdinov</p>

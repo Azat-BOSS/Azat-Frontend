@@ -1,6 +1,5 @@
 import React from "react";
 import modalHome from "./modalhome.module.css"
-import whatsAppIcon from "../../../utils/images/icons/whatsapp.svg"
 import telegramIcon from "../../../utils/images/icons/telegram.svg"
 import mailIcon from "../../../utils/images/icons/mail.svg"
 
@@ -13,18 +12,13 @@ const ModalHome = () => {
       my mail is always open. If you have a question or you need create web. app you can write me in messangers or send email.</p>
       <ul className={modalHome.modalHome__icons}>
         <li className={modalHome.modalHome__li}>
-          <a href="https://telegram.me/AzatFrontend" className={modalHome.modalHome__link}>
-            <img src={telegramIcon} alt="telegram" target="_blank" rel="noopener noreferrer" className={modalHome.modalHome__telegram}/>
+          <a href="https://telegram.me/AzatFrontend" target="_blank" rel="noopener noreferrer" className={modalHome.modalHome__link}>
+            <img src={telegramIcon} alt="telegram" className={modalHome.modalHome__telegram}/>
           </a>
         </li>
         <li className={modalHome.modalHome__li}>
-          <a href="https://telegram.me/AzatFrontend" className={modalHome.modalHome__link}>
-            <img src={whatsAppIcon} alt="whatsApp" target="_blank" rel="noopener noreferrer" className={modalHome.modalHome__image}/>
-          </a>
-        </li>
-        <li className={modalHome.modalHome__li}>
-          <a href="https://telegram.me/AzatFrontend" className={modalHome.modalHome__link}>
-            <img src={mailIcon} alt="mailIcon" target="_blank" rel="noopener noreferrer" className={modalHome.modalHome__image}/>
+          <a href="mailto:azatgainutdinov15@gmail.com" target="_blank" rel="noopener noreferrer" className={modalHome.modalHome__link}>
+            <img src={mailIcon} alt="mailIcon" className={modalHome.modalHome__image}/>
           </a>
         </li>
       </ul>

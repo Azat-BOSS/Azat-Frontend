@@ -1,3 +1,42 @@
 .app {
   width: 100%;
 }
+
+.app_block {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.app__title {
+  font-family: "Inter";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 10rem;
+  color: red;
+}
+
+.app__text {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 4rem;
+  margin-top: 4rem;
+  width: 100%;
+  max-width: 100rem;
+  text-align: center;
+  color: rgba(255, 0, 0, 0.742);
+}
+
+.app__developer {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  margin-top: 4rem;
+  text-align: center;
+  color: rgba(255, 0, 0, 0.742);
+}

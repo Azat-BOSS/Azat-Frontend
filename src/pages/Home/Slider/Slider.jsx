@@ -1,22 +1,14 @@
-import React, { useEffect, useRef }from "react";
+import React, { useRef }from "react";
 import sliderStyle from "./slider.module.css"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import leftArr from "../../../utils/images/icons/leftIcon.svg"
 import rightArr from "../../../utils/images/icons/rightIcon.svg"
 import { Navigation } from "swiper";
 import { motion } from "framer-motion";
-import { worksFetchData } from "../../../services/Reducers/reducerWorks";
-import { useDispatch, useSelector } from "react-redux";
+import { worksData } from "../../../utils/fakeApi";
 import "swiper/css";
 
 const Slider = () => {
-  const dispatch = useDispatch()
-  const sliderCard = useSelector(state => state.worksCardSlice.worksArr.data)
-
-  useEffect(() => {
-    dispatch(worksFetchData())
-  }, [dispatch])
-
   const swiperRef = useRef()
 
   return ( 
@@ -29,17 +21,18 @@ const Slider = () => {
         modules={[Navigation]} 
         onSwiper={(swiper) => swiperRef.current = swiper}
         className={sliderStyle.slider__container}>
-        {sliderCard && sliderCard.map(el => (
-          <SwiperSlide key={el.id}>
-            <SliderBlock
-              title={el.attributes.ProjectName}
-              text={el.attributes.Description}
-              gitLink={el.attributes.gitHubLink}
-              webLink={el.attributes.siteLink}
-              image={el.attributes.Image.data.attributes.url}
+          {worksData.map((el, index) => (
+          <SwiperSlide key={index}>
+          <SliderBlock
+              title={el.title}
+              text={el.text}
+              gitLink={el.gitLink}
+              webLink={el.weblink}
+              image={el.image}
             />
           </SwiperSlide>
-        ))}
+          ))}
+
       </Swiper>
       <motion.button className={sliderStyle.slider__button__prev} 
         type="button"
@@ -64,13 +57,13 @@ const SliderBlock = ({title, text, gitLink, webLink, image}) => {
   return (
     <SwiperSlide>
       <div className={sliderStyle.sliderBlock}>
-        <img src={`http://localhost:1337${image}`} alt="imageBurger" className={sliderStyle.sliderBlock__image}/>
+        <img src={image} alt="backgroundImage" className={sliderStyle.sliderBlock__image}/>
         <div className={sliderStyle.sliderBlock__text__block}>
           <h2 className={sliderStyle.sliderBlock__title__name}>{title}</h2>
           <p className={sliderStyle.sliderBlock__paragraph}>{text}</p>
           <nav className={sliderStyle.sliderBlock__nav}>
-            <motion.a href={gitLink} whileHover={{scale: 1.05}} className={sliderStyle.sliderBlock__link}>View on Github</motion.a>
-            <motion.a href={webLink} whileHover={{scale: 1.05}} className={sliderStyle.sliderBlock__link}>View Website</motion.a>
+            <motion.a href={gitLink} target="_blank" whileHover={{scale: 1.05}} className={sliderStyle.sliderBlock__link}>View on Github</motion.a>
+            <motion.a href={webLink} target="_blank" whileHover={{scale: 1.05}} className={sliderStyle.sliderBlock__link}>View Website</motion.a>
           </nav>
         </div>
       </div>

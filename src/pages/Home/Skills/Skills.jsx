@@ -1,19 +1,10 @@
 import React from "react";
 import skillStyle from "./skills.module.css"
-import SkillCard from "../SkillCard/SkillCard";
-import { skillsFetchData } from "../../../services/Reducers/reducerServer";
-import { useDispatch, useSelector } from "react-redux";
-import { useEffect } from "react";
+import SkillCard from "../../../components/SkillCard/SkillCard";
 import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
+import { skillCardData } from "../../../utils/fakeApi";
 const Skills = () => {
-  const dispatch = useDispatch()
-  const skillCardData = useSelector(state => state.skillsCardSlice.skillsArr.data)
-
-  useEffect(() => {
-    dispatch(skillsFetchData())
-  }, [dispatch])
-
   const animationCard = {
     hidden: {
       opacity: 0,
@@ -54,13 +45,13 @@ const Skills = () => {
             viewport={{amount: .1 , once: true}}
             variants={animationCard}
         >
-          {skillCardData && skillCardData.map(el => (
+          {skillCardData.map((el, index) => (
             <SkillCard 
-              name={el.attributes.titleTech} 
-              text={el.attributes.infoTech}
-              image={el.attributes.iconTech.data.attributes.url}
-              key={el.id}
-              />
+            name={el.name} 
+            text={el.text}
+            image={el.image}
+            key={index}
+            />
           ))}
         </motion.div>
       </div>
