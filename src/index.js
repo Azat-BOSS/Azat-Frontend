@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App.jsx';
+import { modalSlice } from './Services/modalReducer.js';
+import { configureStore, combineReducers } from "@reduxjs/toolkit"
 import { Provider } from 'react-redux';
-import { configureStore } from "@reduxjs/toolkit"
-import modalSlice from './Services/modalReducer';
+import App from './App.jsx';
 
-const store = configureStore({
-  reducer: {
-    modalSlice: modalSlice
-  }
+const rootReducer = combineReducers({
+    modalSlice: modalSlice.reducer
 })
-
+const store = configureStore({
+  reducer: rootReducer
+})
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
