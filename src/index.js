@@ -3,7 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App.jsx';
 import { Provider } from 'react-redux';
-import { store } from './Services/store.js';
+import { configureStore } from "@reduxjs/toolkit"
+import modalSlice from './Services/modalReducer';
+
+const store = configureStore({
+  reducer: {
+    modalSlice: modalSlice
+  }
+})
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
