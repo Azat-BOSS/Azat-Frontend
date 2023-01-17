@@ -1,0 +1,175 @@
+.intro {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(180deg, #0014c4 0%, #010047 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10rem;
+  line-height: 1.4;
+  color: #ffffff;
+  display: flex;
+  text-align: center;
+}
+
+@media screen and (max-width: 1100px){
+  .intro__title {
+    font-size: 62px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .intro__title {
+    font-size: 47px;
+  }
+}
+
+@media screen and (max-width: 512px){
+  .intro__title {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 414px){
+  .intro__title {
+    font-size: 34px;
+  }
+}
+
+
+.intro__text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 1.4;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 57.6rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 1100px){
+  .intro__text {
+    font-size: 25px;
+    max-width: 400px;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .intro__text {
+    font-size: 21px;
+    max-width: 400px;
+    margin-top: 12.5px;
+  }
+}
+
+@media screen and (max-width: 512px){
+  .intro__text {
+    font-size: 19px;
+    max-width: 350px;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 414px){
+  .intro__text {
+    font-size: 16px;
+    max-width: 300px;
+    margin-top: 15px;
+  }
+}
+
+.intro__text__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.intro__button {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.1rem;
+  line-height: 1.4;
+  color: #ffffff;
+  border-radius: 20px;
+  border: 3px solid #FFFFFF;
+  width: 17rem;
+  height: 7rem;
+  transition: .4s ease all;
+  margin-top: 4rem;
+}
+
+@media screen and (max-width: 1100px){
+  .intro__button {
+    width: 145px;
+    height: 50px;
+    font-size: 17px;
+    margin-top: 35px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .intro__button {
+    width: 125px;
+    height: 45px;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 512px){
+  .intro__button {
+    width: 122px;
+    height: 43px;
+    font-size: 14px;
+    margin-top: 25px;
+  }
+}
+
+.intro__button:hover {
+  background-color: #fff;
+  color: #0014c4;
+}
+
+.intro__bg_image {
+  background-image: url("../../../utils/images/backogroundHeaderImg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 70rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1100px){
+  .intro__bg_image {
+    top: 45%;
+    left: 50%;
+    background-size: cover;
+    height: 90rem;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 768px){
+  .intro__bg_image {
+    top: 45%;
+    left: 50%;
+    background-size: cover;
+    height: 120rem;
+    transform: translate(-50%, -50%);
+  }
+}

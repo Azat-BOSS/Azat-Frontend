@@ -1,0 +1,75 @@
+.footer {
+  height: 44rem;
+  padding: 3.2rem 0;
+  position: relative;
+}
+
+.footer__logo {
+  width: 7rem;
+  height: 7rem;
+  margin-left: 12rem;
+}
+
+.footer__block__info {
+  margin-left: 12rem;
+  display: flex;
+  column-gap: 15rem;
+  margin-top: 3rem;
+}
+
+.footer__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 0.5rem;
+}
+
+.footer__text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.4;
+  text-align: start;
+  color: rgba(0, 0, 0, 0.75);
+  margin-top: 1rem;
+}
+
+.footer__text:hover {
+  text-decoration: underline;
+}
+
+.footer__geo {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.4;
+  text-align: start;
+  color: rgba(0, 0, 0, 0.75);
+  margin-top: 1rem;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__author {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.4;
+  text-align: center;
+  color: #000000;
+}
+
+.footer__author {
+  position: absolute;
+  left: 12rem;
+  bottom: 3.2rem;
+}

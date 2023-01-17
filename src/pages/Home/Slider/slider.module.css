@@ -1,0 +1,165 @@
+.slider {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(180deg, #0014c4 0%, #010047 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 20rem 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.slider__bg__image {
+  position: absolute;
+  background-image: url("../../../utils/images/backogrundWorksImg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 132rem;
+  position: absolute;
+  top: -15rem;
+  left: 0;
+  z-index: 0;
+  opacity: .7;
+}
+
+.slider__uppertitle__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.5rem;
+  line-height: 42px;
+  color: #00f0ff;
+}
+
+.slider__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 7rem;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-top: 1.5rem;
+  position: relative;
+  z-index: 10;
+}
+
+.sliderBlock {
+  position: relative;
+}
+
+.sliderBlock__text__block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120rem;
+  height: 69rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  overflow: hidden;
+  transition: .3s ease;
+}
+
+.sliderBlock__text__block:hover {
+  opacity: 1;
+  overflow: visible;
+}
+
+.sliderBlock__text__block:before {
+  content: "";
+  width: 120rem;
+  height: 69rem;
+  background-color: rgba(0, 0, 0, 0.681);
+  position: absolute;
+}
+
+.sliderBlock__title__name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6.5rem;
+  line-height: 1.2;
+  text-align: center;
+  color: #ffffff;
+  z-index: 5;
+  margin-top: 16rem;
+}
+
+.sliderBlock__paragraph {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 1.4;
+  text-align: center;
+  max-width: 62.5rem;
+  color: #ffffff;
+  z-index: 5;
+  margin-top: 5rem;
+  opacity: .8;
+}
+
+.slider__container {
+  margin-top: 13.5rem;
+  display: flex;
+  width: 120rem;
+  height: 69rem;
+  overflow: hidden;
+}
+
+.sliderBlock__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 68.6rem;
+  z-index: 5;
+  margin-top: 12rem;
+}
+
+.sliderBlock__link {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 1.4;
+  text-align: center;
+  color: #ffffff;
+}
+
+.sliderBlock__image {
+  width: 120rem;
+  height: 69rem;
+}
+
+.slider__button__prev {
+  border: none;
+  width: 4rem;
+  height: 7.3rem;
+  position: absolute;
+  left: 25rem;
+  top: 56.5%;
+}
+
+.slider__button__prev img {
+  width: 4rem;
+  height: 7.3rem;
+}
+
+.slider__button__next {
+  border: none;
+  width: 4rem;
+  height: 7.3rem;
+  position: absolute;
+  right: 25rem;
+  top: 56.5%;
+}
+
+.slider__button__next img {
+  width: 4rem;
+  height: 7.3rem;
+}
