@@ -11,6 +11,8 @@ import webpackIcon from "./images/skillsIcons/webpack.svg"
 import mestoProject from "./images/mestoproject.webp"
 import antoolsProject from "./images/antools.webp"
 import burgerProject from "./images/reactBurger.png"
+import zenProject from "./images/zen.webp"
+import apertureProject from "./images/aperture.webp"
 
 export const skillCardData = [
   {
@@ -62,11 +64,11 @@ export const skillCardData = [
 
 export const worksData = [
   {
-    title: "Mesto",
-    text: "Mesto - mini clone Instagram, where you can create posts on your own.",
-    gitLink: "https://github.com/Azat-BOSS/Mesto",
-    weblink: "https://azat-boss.github.io/Mesto",
-    image: mestoProject
+    title: "Zen",
+    text: "Zen - Commercial project. Company sales apartments in Turkey.",
+    gitLink: "https://github.com/Azat-BOSS/Zen",
+    weblink: "https://azat-boss.github.io/Zen-Project/",
+    image: zenProject
   },
   {
     title: "Antools",
@@ -76,10 +78,24 @@ export const worksData = [
     image: antoolsProject
   },
   {
+    title: "Mesto",
+    text: "Mesto - mini clone Instagram, where you can create posts on your own.",
+    gitLink: "https://github.com/Azat-BOSS/Mesto",
+    weblink: "https://azat-boss.github.io/Mesto",
+    image: mestoProject
+  },
+  {
     title: "Burger Stellar",
     text: "Burget Stellar - online food store, where you can create your burger on your own.",
     gitLink: "https://github.com/Azat-BOSS/Burger-stellar",
     weblink: "https://github.com/Azat-BOSS/Burger-stellar",
     image: burgerProject
   },
+  {
+    title: "Aperture",
+    text: "Aperture - simple layout on html and preprocessor Scss",
+    gitLink: "https://github.com/Azat-BOSS/Aperture",
+    weblink: "https://azat-boss.github.io/Aperture/",
+    image: apertureProject
+  }
 ]

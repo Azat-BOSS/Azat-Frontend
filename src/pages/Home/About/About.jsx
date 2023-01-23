@@ -32,7 +32,8 @@ const About = () => {
               <motion.p custom={1} variants={elementsView}className={aboutStyle.about__text__upper}>About me</motion.p>
               <motion.h2 custom={2} variants={elementsView} className={aboutStyle.about__title}>Gaynutdinov Azat</motion.h2>
               <motion.p custom={3} variants={elementsView}className={aboutStyle.about__text}>have been doing front-end development for about 1 year.
-              Use modern tools and improve my skills at the same time and algorithms.
+              Use modern tools and improve my skills at the same time and algorithms. <br/><br/>
+              Don't laugh at the picture, I wasn't in the mood for it)
               </motion.p>
           </div>
           <img src={photoImage} alt="photoImage" className={aboutStyle.about__image}/>

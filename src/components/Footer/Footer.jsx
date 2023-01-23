@@ -24,7 +24,7 @@ const Footer = () => {
           <a href="mailto:azatgainutdinov15@gmail.com" rel="noopener noreferrer" className={footerStyle.footer__text}>email</a>
         </ul>
       </div>
-      <p className={footerStyle.footer__author}>© 2022, Azat Gaynutdinov</p>
+      <p className={footerStyle.footer__author}>© 2023, Azat Gaynutdinov</p>
     </footer>
   );
 }
